@@ -102,4 +102,27 @@ Object.assign(container.style, {
     padding: "20px"
 });
 
+const article2 = document.querySelector("article");
+const newParagraph = document.createElement("p");
+newParagraph.textContent = "This is a new paragraph!";
+newParagraph.className = "content highlight";
+article2.appendChild(newParagraph);
+const firstParagraph = article2.querySelector("p");
+article2.insertBefore(newParagraph, firstParagraph);
+const navItem = document.querySelector(".nav-link").parentElement;
+const clone = navItem.cloneNode(true);
+clone.querySelector("a").textContent = "New Link";
+document.querySelector(".nav-list").appendChild(clone);
+function addNavItem(text, href) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = href;
+    a.className = "nav-link";
+    a.textContent = text;
+    li.appendChild(a);
+    document.querySelector(".nav-list").appendChild(li);
+}
+addNavItem("Blog", "/blog");
+addNavItem("Portfolio", "/portfolio");
+
 

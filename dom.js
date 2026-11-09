@@ -67,3 +67,39 @@ console.log("Practice 4 - all li in ul:", allLi);
 const footer = document.querySelector("footer");
 const bodyFromFooter = footer.parentElement;
 console.log("Practice 5 - body from footer:", bodyFromFooter);
+
+const h1 = document.querySelector("h1");
+console.log("textContent:", h1.textContent);
+console.log("innerText:", h1.innerText);
+h1.textContent = "New Title";
+h1.textContent = "DOM Practice";
+const article = document.querySelector("article");
+console.log("innerHTML:", article.innerHTML);
+const userInput = `<img src="x" onerror="alert('hacked!')">`;
+article.textContent = userInput;
+article.innerHTML = `
+    <h2 class="title">Article Title</h2>
+    <p class="content">This is the first paragraph.</p>
+    <p class="content">This is the second paragraph.</p>
+`;
+const link = document.querySelector(".nav-link");
+console.log("getAttribute href:", link.getAttribute("href"));
+console.log("href property:", link.href);
+link.setAttribute("href", "https://developer.mozilla.org");
+console.log("has target?", link.hasAttribute("target"));
+link.removeAttribute("target");
+link.dataset.id = "123";
+link.dataset.category = "tech";
+console.log(link.dataset.id);
+console.log(link.dataset.category);
+const container = document.querySelector(".container");
+container.style.backgroundColor = "#f0f0f0";
+container.style.padding = "30px";
+container.style.borderRadius = "8px";
+Object.assign(container.style, {
+    backgroundColor: "#333",
+    color: "white",
+    padding: "20px"
+});
+
+

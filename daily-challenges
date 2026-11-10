@@ -1,0 +1,7 @@
+# Daily Challenges
+All challenges implemented in dom.js and dom-practice.html:
+- Day 1: Color Changer - colorChanger()
+- Day 2: Dynamic Element Creator - addParagraph()
+- Day 3: Image Remover - removeImages()
+- Day 4: Content Copier - copyContent()
+- Day 5: Dark Mode Toggle - darkModeToggle() with localStorage

@@ -49,7 +49,7 @@ Interactive To-Do List application built with vanilla JavaScript. The app lets y
 - **Edit mode conflicting with toggle:** Fixed by handling double-click separately and using Enter to save / Escape to cancel, with blur to save.
 
 ## Screenshots (optional)
-![To-Do List Screenshot](screenshot.png)
+![To-Do List Screenshot](Screenshot_20261112-102951.png)
 
 ## Live Demo (if deployed)
 [View Live Demo](https://preciousndegwa48.github.io/iyf-s12-week-05-preciousndegwa48/)
